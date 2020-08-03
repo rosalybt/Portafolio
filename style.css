@@ -1,0 +1,16 @@
+/* HEADER */
+.menu-pc {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.secciones-menu {
+  display: flex;
+}
+li {
+  list-style-type: none;
+  margin: 20px;
+}
+a {
+  text-decoration: none;
+}
