@@ -1,34 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="menu-pc">
-            <ul class="secciones-menu">
+        <nav class="barra-nav">
+            <ul class="lista-menu">
                 <li><a href="">HOLA</li></a>
                 <li><a href="#conocimientos">CONOCIMIENTOS</li></a>
                 <li><a href="#proyectos">PROYECTOS</li></a>
-                <li><a href="#contacto"><button class="boton-morado">CONTACTO</button></a></li>
+                <li><a href="#contacto" class="boton-amarillo">CONTACTO</a></li>
+                <div class="menu-hamburguesa"><i class="fas fa-bars"></i></div>
             </ul>
+
         </nav>
     </header>
 
-    <!-- SECCIÓN PRINCIPAL -->
-    <section>
+    <!-- SECCIÓN PRESENTACIÓN -->
+    <section class="seccion-principal">
         <div class="informacion">
+            <p class="hola">¡Hola! Soy</p>
+            <h1 class="nombre">Rosaly Balbuena T.</h1>
+            <p class="descripcion">Desarrolladora Frontend y amante de los animales🐾.</p>
+            <a href="#proyectos" class="boton-amarillo">LO QUE HAGO</a>
+        </div>
 
+        <div class="imagen-presentacion">
+            <img src="imagenes/img-principal.svg" alt="">
         </div>
-        <div class= "imagen-informacion">
-            <img src="" alt="">
-        </div>
+
+    </section>
+
+    <!--SECCIÓN CONOCIMIENTOS-->
+    <section id="conocimientos" class="seccion-conocimientos">
+        <div class="contenedor-gnrl-conocimientos">
+            <div class="encabezado-seccion">
+                <h1 class="titulo-seccion">Mis conocimientos</h1>
+                <p class="descripcion-seccion">Estos son mis conocimientos hasta el momento, pero siempre estoy
+                    aprendiendo algo nuevo</p>
+            </div>
+
+            <div class="content-tarjetas-conocimientos">
+                <div class="tarjeta-conocimiento">
+                    <img src="" alt="">
+                    <p class="descripcion-tarjeta-c">HTML 5</p>
+                </div>
+
+                <div class="tarjeta-conocimiento">
+                    <img src="" alt="">
+                    <p class="descripcion-tarjeta-c">CSS 3</p>
+                </div>
+
+                <div class="tarjeta-conocimiento">
+                    <img src="" alt="">
+                    <p class="descripcion-tarjeta-c">SASS</p>
+                </div>
+
+                <div class="tarjeta-conocimiento">
+                    <img src="" alt="">
+                    <p class="descripcion-tarjeta-c">JAVASCRIPT</p>
+                </div>
+
+                <div class="tarjeta-conocimiento">
+                    <img src="" alt="">
+                    <p class="descripcion-tarjeta-c">REACT</p>
+                </div>
+
+                <div class="tarjeta-conocimiento">
+                    <img src="" alt="">
+                    <p class="descripcion-tarjeta-c">GIT</p>
+                </div>
+
+            </div>
+
+    </section>
+
+    <!--SECCIÓN FRASE-->
+
+    <section class="seccion-frase">
+
+        <div class="icono-frase"><i class="fas fa-quote-right"></i></div>
+        <p class="frase">Don't let anyone tell you it's impossible just because it's never been done. If we lived like
+            that, humanity never would have invented anything.</p>
+        <p class="autor">Anónimo</p>
+
     </section>
 
 
+    <!--SECCION-PROYECTOS-->
+
+    <section class="seccion-proyectos"></section>
+
+
+    <!--footer-->
+    <footer></footer>
 </body>
+
 </html>
