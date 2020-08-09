@@ -68,12 +68,14 @@ a, a:visited {
 }
 
 .hola {
-  font-size: 2.2em;
+
+ font-size: 2.2em;
   font-weight: bolder;
 }
 
 .nombre {
-  font-size: 4.4em;
+  
+font-size: 4.4em;
   font-weight: 900;
   color: #ffcf24;
 }
@@ -108,7 +110,7 @@ a, a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75%;
+  max-width: 75%;
 }
 
 .content-tarjetas-conocimientos {
@@ -142,8 +144,6 @@ a, a:visited {
   background-color: white;
   margin-right: 3%;
   margin-bottom: 3%;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 /*SECCION-FRASE*/
@@ -187,23 +187,25 @@ a, a:visited {
   }
   .seccion-principal {
     flex-direction: column;
-      height: auto;
-    padding: 3%;
+    height: auto;
+    padding: 1em;
+   
   }
-  
-  .barra-nav{
-height: 10%;
+  .barra-nav {
+    height: 3em;
   }
-
-  .informacion, .imagen-presentacion{
+  .informacion, .imagen-presentacion {
+    margin-top: 15%;
     width: 100%;
+    align-items: center;
+    text-align: center;
   }
-.imagen-presentacion{
-  margin-top: 3%;
-}
 
-.seccion-frase{
-  height: 50vh;
-}
-
+  .encabezado-seccion{
+    align-items: center;
+  }
+ 
+  .seccion-frase {
+    height: 50vh;
+  }
 }
