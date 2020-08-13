@@ -116,7 +116,7 @@ a, a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #f6f7fb;
+  background-color: #f6f7fb;max-width: 75%;
 }
 
 .encabezado-seccion {
@@ -143,6 +143,7 @@ a, a:visited {
   background-color: white;
   margin-right: 3%;
   margin-bottom: 3%;
+
 }
 
 /*SECCION-FRASE*/
@@ -197,6 +198,34 @@ a, a:visited {
   width: 50%;
   display: flex;
   justify-content: space-around;
+}
+
+.contenedor-tarjeta {
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+ justify-content: center;
+}
+
+.tarjeta-proyecto {
+  
+    width: 30%;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    padding: 2%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    /* padding: 2%;*/
+
+}
+
+
+.tarjeta-proyecto img {
+  width: 100%;
 }
 
 /*FOOTER*/
