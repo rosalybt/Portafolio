@@ -165,7 +165,7 @@ font-size: 4.4em;
 }
 
 .frase {
-  width: 50%;
+  width: 80%;
   margin-bottom: 1.25em;
   text-align: center;
   font-size: 1.20em;
@@ -175,6 +175,26 @@ font-size: 4.4em;
   font-size: 2.50em;
   font-weight: 700;
 }
+
+/*SECCION-PROYECTOS*/
+
+.seccion-proyectos{
+
+  padding-top: 25%;
+
+  padding-bottom: 25%;
+}
+
+
+/*FOOTER*/
+footer{
+  padding-top: 5%;
+
+  padding-bottom: 5%;
+  background-color: #ffcf24;
+
+}
+
 
 /*MEDIA*/
 
@@ -200,12 +220,14 @@ font-size: 4.4em;
     align-items: center;
     text-align: center;
   }
-
+/*
   .encabezado-seccion{
     align-items: center;
   }
- 
+ .fas.fa-quote-right{
+margin-bottom: 25%;
+ }
   .seccion-frase {
     height: 50vh;
-  }
+  }*/
 }
