@@ -68,14 +68,12 @@ a, a:visited {
 }
 
 .hola {
-
- font-size: 2.2em;
+  font-size: 2.2em;
   font-weight: bolder;
 }
 
 .nombre {
-  
-font-size: 4.4em;
+  font-size: 4.4em;
   font-weight: 900;
   color: #ffcf24;
 }
@@ -91,6 +89,7 @@ font-size: 4.4em;
   border-radius: 100px;
   height: 2.5em;
   display: flex;
+  border: none;
   align-items: center;
 }
 
@@ -178,23 +177,35 @@ font-size: 4.4em;
 
 /*SECCION-PROYECTOS*/
 
-.seccion-proyectos{
-
-  padding-top: 25%;
-
-  padding-bottom: 25%;
+.seccion-proyectos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
 }
 
+.boton {
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 1em;
+}
+
+.contenedor-filtro {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
 
 /*FOOTER*/
-footer{
-  padding-top: 5%;
 
+footer {
+  padding-top: 5%;
   padding-bottom: 5%;
   background-color: #ffcf24;
-
 }
-
 
 /*MEDIA*/
 
@@ -209,7 +220,6 @@ footer{
     flex-direction: column;
     height: auto;
     padding: 1em;
-   
   }
   .barra-nav {
     height: 3em;
@@ -220,7 +230,7 @@ footer{
     align-items: center;
     text-align: center;
   }
-/*
+  /*
   .encabezado-seccion{
     align-items: center;
   }
