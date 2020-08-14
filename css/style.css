@@ -236,7 +236,6 @@ a, a:visited {
     padding: 2%;
     padding-bottom: 5%;
     padding-top: 5%;
-    /* padding: 2%;*/
 
 }
 
@@ -260,6 +259,20 @@ footer {
 .lista-footer{
   display: flex;
   flex-direction: row;
+}
+.contenedor-iconos-contacto{
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 1%;
+ 
+}
+
+ .contenedor-iconos-contacto i{
+
+font-size: 20px;
 }
 
 /*MEDIA*/
