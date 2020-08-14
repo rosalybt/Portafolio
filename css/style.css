@@ -146,6 +146,10 @@ a, a:visited {
 
 }
 
+.icono-conocimiento{
+  font-size: 5em;
+}
+
 /*SECCION-FRASE*/
 
 .seccion-frase {
@@ -234,6 +238,15 @@ footer {
   padding-top: 5%;
   padding-bottom: 5%;
   background-color: #ffcf24;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.lista-footer{
+  display: flex;
+  flex-direction: row;
 }
 
 /*MEDIA*/
