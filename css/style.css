@@ -292,7 +292,7 @@ footer {
 
 .seccion-principal {
   flex-direction: column;
-  height: 80vh;
+  height: auto;
   padding: 1em;
 }
 
