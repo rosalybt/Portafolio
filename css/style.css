@@ -84,7 +84,7 @@ a, a:visited {
 }
 
 .descripcion {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   font-size: 1em;
 }
 
@@ -221,6 +221,7 @@ a, a:visited {
 .contenedor-filtro {
   width: 50%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-top: 2%;
   font-size: 1em;
@@ -291,16 +292,16 @@ footer {
 
 .seccion-principal {
   flex-direction: column;
-  height: auto;
+  height: 80vh;
   padding: 1em;
 }
 
 .barra-nav {
-  height: 3.5em;
+  height: 4em;
 }
 
 .informacion, .imagen-presentacion {
-  margin-top: 15%;
+  margin-top: 25%;
   width: 100%;
   align-items: center;
   text-align: center;
@@ -327,6 +328,7 @@ footer {
 .contenedor-filtro{
   flex-direction: column;
   font-size: 1em;
+flex-wrap: wrap;
 }
 
 .boton{
