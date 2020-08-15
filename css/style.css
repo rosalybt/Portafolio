@@ -4,13 +4,12 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: Montserrat, sans-serif;
-  
 }
 
 /* HEADER */
@@ -280,63 +279,95 @@ footer {
 
 /*MEDIA*/
 
-@media screen and (max-width:600px) {
-
-.menu-hamburguesa {
-  display: flex;
-}
-
-.lista-menu li {
-  display: none;
-}
-
-.seccion-principal {
-  flex-direction: column;
-  height: auto;
-  padding: 1em;
-}
-
-.barra-nav {
-  height: 4em;
-}
-
-.informacion, .imagen-presentacion {
-  margin-top: 25%;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-}
-
-.titulo-seccion , .nombre{
-  font-size: 2.3em;
-  text-align: center;
-}
-
-.lista-footer {
-  display: none;
-}
-
-.contenedor-iconos-contacto {
-  width: 50%;
-}
-
-.creditos{
-  font-size: 0.8em ;
-  text-align: center;
-}
-
-.contenedor-filtro{
-  flex-direction: column;
-  font-size: 1em;
-flex-wrap: wrap;
-}
-
-.boton{
-  margin-top: 3%;
-  margin-bottom: 3%;
+@media(max-width:321px) {
+  .content-tarjetas-conocimientos {
+  
+    max-width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 }
+
+
+@media  (max-width:768px) {
+  .menu-hamburguesa {
+    display: flex;
+  }
+  .lista-menu li {
+    display: none;
+  }
+  .seccion-principal {
+    flex-direction: column;
+    height: auto;
+    padding: 1em;
+    padding-bottom: 2em;
+  }
+  .barra-nav {
+    height: 4em;
+  }
+  .informacion, .imagen-presentacion {
+    margin-top: 25%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .titulo-seccion, .nombre {
+    font-size: 2.3em;
+    text-align: center;
+  }
+  .lista-footer {
+    display: none;
+  }
+  .contenedor-iconos-contacto {
+    width: 50%;
+  }
+  .creditos {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .contenedor-filtro {
+    flex-direction: column;
+    font-size: 1em;
+    flex-wrap: wrap;
+  }
+  .boton {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .content-tarjetas-conocimientos {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .tarjeta-conocimiento {
+    width: 8em;
+    height: 10em;
+  }
+
+  .contenedor-gnrl-conocimientos{
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:922px) {
+  .content-tarjetas-conocimientos {
+    max-width: 100%;
+  }
+  .seccion-principal {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .informacion, .imagen-presentacion {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
 
 /*MEDIA 320*/
 
