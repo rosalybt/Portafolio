@@ -85,6 +85,7 @@ a, a:visited {
 .descripcion {
   margin-bottom: 10%;
   font-size: 1em;
+
 }
 
 .boton-amarillo {
@@ -161,7 +162,7 @@ a, a:visited {
 
 .descripcion-tarjeta {
   margin-top: 10%;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.1em;
   text-align: center;
 }
@@ -306,6 +307,16 @@ footer {
     align-items: center;
     text-align: center;
   }
+
+  .contenedor-tarjeta{
+    max-width: 90%;
+  }
+
+  .tarjeta-proyecto{
+    width: 90%;
+    margin-right: 0;
+  }
+
 }
 
 @media screen and (max-width:765px) {
@@ -371,6 +382,10 @@ footer {
 @media screen and (min-width:768px) {
 .contenedor-gnrl-conocimientos{
   max-width: 1015px;
+}
+
+.tarjeta-proyecto{
+  width: 40%;
 }
 }
 
