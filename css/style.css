@@ -47,7 +47,7 @@ a, a:visited {
 .seccion-principal {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  /*height: 100vh;*/
   padding: 5%;
 }
 
@@ -279,7 +279,7 @@ footer {
 
 /*MEDIA*/
 
-@media(max-width:321px) {
+/*@media(max-width:321px) and (min-width:430px) {
   .content-tarjetas-conocimientos {
   
     max-width: 100%;
@@ -287,27 +287,44 @@ footer {
     margin-bottom: 10%;
 }
 
+
+
+}*/
+@media screen and (max-width:458px){
+  .seccion-principal {
+    flex-direction: column;
+    height: auto;
+    padding: 1em;
+    padding-bottom: 2em;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .informacion, .imagen-presentacion {
+    margin-top: 25%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
 }
 
+@media screen and (max-width:765px) {
+  .seccion-principal {
+    flex-direction: column;
+  }
+ 
+  .barra-nav {
+    height: 4em;
+  }
 
-@media  (max-width:768px) {
   .menu-hamburguesa {
     display: flex;
   }
   .lista-menu li {
     display: none;
   }
-  .seccion-principal {
-    flex-direction: column;
-    height: auto;
-    padding: 1em;
-    padding-bottom: 2em;
-  }
-  .barra-nav {
-    height: 4em;
-  }
   .informacion, .imagen-presentacion {
-    margin-top: 25%;
+    margin-top: 15%;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -351,19 +368,10 @@ footer {
   }
 }
 
-@media screen and (min-width:922px) {
-  .content-tarjetas-conocimientos {
-    max-width: 100%;
-  }
-  .seccion-principal {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .informacion, .imagen-presentacion {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
+@media screen and (min-width:768px) {
+.contenedor-gnrl-conocimientos{
+  max-width: 1015px;
+}
 }
 
 
