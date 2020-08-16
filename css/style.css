@@ -203,6 +203,7 @@ a, a:visited {
   justify-content: center;
   align-items: center;
   padding-bottom: 10%;
+  text-align: center;
 }
 
 .boton {
@@ -246,6 +247,13 @@ a, a:visited {
 
 .tarjeta-proyecto img {
   width: 100%;
+}
+
+
+.proximamente{
+  color: red;
+  font-weight: 900;
+
 }
 
 /*FOOTER*/
