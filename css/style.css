@@ -29,7 +29,6 @@ body {
 li {
   list-style-type: none;
   margin: 1em;
-  /*font-size: 1em;*/
 }
 
 .menu-hamburguesa {
@@ -47,7 +46,6 @@ a, a:visited {
 .seccion-principal {
   display: flex;
   flex-direction: row;
-  /*height: 100vh;*/
   padding: 5%;
 }
 
@@ -59,7 +57,7 @@ a, a:visited {
 }
 
 .imagen-presentacion img {
-  width: 100%;
+  width: 90%;
 }
 
 .informacion {
@@ -85,7 +83,6 @@ a, a:visited {
 .descripcion {
   margin-bottom: 10%;
   font-size: 1em;
-
 }
 
 .boton-amarillo {
@@ -280,18 +277,7 @@ footer {
 
 /*MEDIA*/
 
-/*@media(max-width:321px) and (min-width:430px) {
-  .content-tarjetas-conocimientos {
-  
-    max-width: 100%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-
-
-}*/
-@media screen and (max-width:458px){
+@media screen and (max-width:458px) {
   .seccion-principal {
     flex-direction: column;
     height: auto;
@@ -299,7 +285,6 @@ footer {
     padding-bottom: 2em;
     align-items: center;
     text-align: center;
-    
   }
   .informacion, .imagen-presentacion {
     margin-top: 25%;
@@ -307,27 +292,24 @@ footer {
     align-items: center;
     text-align: center;
   }
-
-  .contenedor-tarjeta{
+  .contenedor-tarjeta {
     max-width: 90%;
   }
-
-  .tarjeta-proyecto{
+  .tarjeta-proyecto {
     width: 100%;
-    margin-right: 0;
+    margin-right: 2%;
   }
 
+ 
 }
 
-@media screen and (max-width:765px) {
+@media screen and  (max-width:768px) {
   .seccion-principal {
     flex-direction: column;
   }
- 
   .barra-nav {
     height: 4em;
   }
-
   .menu-hamburguesa {
     display: flex;
   }
@@ -364,53 +346,29 @@ footer {
     margin-bottom: 3%;
   }
   .content-tarjetas-conocimientos {
-    width: 100%;
+ 
     justify-content: center;
     margin-top: 10%;
     margin-bottom: 10%;
   }
   .tarjeta-conocimiento {
-    width: 8em;
-    height: 10em;
+    width: 11em;
+    height: 12em;
   }
-
-  .contenedor-gnrl-conocimientos{
+  .contenedor-gnrl-conocimientos {
     max-width: 100%;
   }
-}
 
-@media screen and (min-width:768px) {
-.contenedor-gnrl-conocimientos, .contenedor-tarjeta,.contenedor-filtro{
-  max-width: 1015px;
-}
-
-.tarjeta-proyecto{
-  width: 30%;
-}
-
-
-
-}
-
-
-
-
-/*MEDIA 320*/
-
-/*@media(max-width:320px)and( min-width:599px) {
-  h1 {
-    font-size: 1em;
-    text-align: center;
+  .tarjeta-proyecto{
+    width: 100%;
   }
 }
 
-/*
-  .encabezado-seccion{
-    align-items: center;
+@media screen and (min-width:769px) {
+  .contenedor-gnrl-conocimientos, .contenedor-tarjeta, .contenedor-filtro {
+    max-width: 1015px;
   }
- .fas.fa-quote-right{
-margin-bottom: 25%;
- }
-  .seccion-frase {
-    height: 50vh;
-  }*/
+  .tarjeta-proyecto {
+    width: 30%;
+  }
+}
