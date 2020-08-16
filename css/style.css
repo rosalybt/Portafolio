@@ -313,7 +313,7 @@ footer {
   }
 
   .tarjeta-proyecto{
-    width: 90%;
+    width: 100%;
     margin-right: 0;
   }
 
@@ -380,13 +380,16 @@ footer {
 }
 
 @media screen and (min-width:768px) {
-.contenedor-gnrl-conocimientos{
+.contenedor-gnrl-conocimientos, .contenedor-tarjeta,.contenedor-filtro{
   max-width: 1015px;
 }
 
 .tarjeta-proyecto{
-  width: 40%;
+  width: 30%;
 }
+
+
+
 }
 
 
