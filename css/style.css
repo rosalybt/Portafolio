@@ -299,11 +299,9 @@ footer {
     width: 100%;
     margin-right: 2%;
   }
-
- 
 }
 
-@media screen and  (max-width:768px) {
+@media screen and (max-width:768px) {
   .seccion-principal {
     flex-direction: column;
   }
@@ -346,7 +344,6 @@ footer {
     margin-bottom: 3%;
   }
   .content-tarjetas-conocimientos {
- 
     justify-content: center;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -358,8 +355,7 @@ footer {
   .contenedor-gnrl-conocimientos {
     max-width: 100%;
   }
-
-  .tarjeta-proyecto{
+  .tarjeta-proyecto {
     width: 100%;
   }
 }
