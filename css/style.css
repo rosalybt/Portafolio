@@ -35,8 +35,10 @@ li {
   display: none;
 }
 
+/* No es necesario agregar este display: block a los elementos a */
 a, a:visited {
   text-decoration: none;
+  /* Privilegia usar colores hex o rgb en lugar de nombres: en este caso, #000000 */
   color: black;
   display: block;
 }
@@ -45,6 +47,7 @@ a, a:visited {
 
 .seccion-principal {
   display: flex;
+  /* No es necesario agregar flex direction row aqui */
   flex-direction: row;
   padding: 5%;
 }
@@ -56,6 +59,8 @@ a, a:visited {
   justify-content: center;
 }
 
+/* Es preferible que la imagen tenga siempre un width de 100%, y si no se ve como queremos, 
+achicamos su contenedor (en este caso, imagen-presentacion) */
 .imagen-presentacion img {
   width: 90%;
 }
@@ -93,6 +98,7 @@ a, a:visited {
   display: flex;
   border: none;
   align-items: center;
+  /* no es necesario justify content aqui */
   justify-content: center;
 }
 
@@ -102,6 +108,7 @@ a, a:visited {
   background-color: #f6f7fb;
   display: flex;
   justify-content: center;
+  /* no parece ser necesario align items center aqui */
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -119,6 +126,7 @@ a, a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* no es necesario este background-color */
   background-color: #f6f7fb;
   max-width: 75%;
 }
@@ -144,6 +152,7 @@ a, a:visited {
   height: 14em;
   border-radius: 15px;
   border: 1px solid #e0e0e0;
+  /* privilegia usar hex en lugar de nombres de colores */
   background-color: white;
   margin-right: 3%;
   margin-bottom: 3%;
@@ -161,11 +170,16 @@ a, a:visited {
   margin-top: 10%;
   font-weight: 700;
   font-size: 1.1em;
+  /* no es necesario este text align ya que se hereda de su contenedor */
   text-align: center;
 }
 
 /*SECCION-FRASE*/
 
+
+/* Si bien en este caso no trae ningun problema, privilegiamos no darle un height fijo a las secciones. 
+Que pasa si por ejemplo deseas cambiar la frase por una mas larga? Va a "rebalsar" su contenedor y verse mal. 
+Si necesitas agrandar esta seccion, yo optaria por aumentar el padding-top y bottom en lugar de darle un height  */
 .seccion-frase {
   display: flex;
   flex-direction: column;
@@ -216,6 +230,8 @@ a, a:visited {
   padding-right: 2%;
 }
 
+/* si te molesta que el boton amarillo se vea tan ancho en mobile, podes agregar aca
+align-items: center */
 .contenedor-filtro {
   width: 50%;
   display: flex;
@@ -251,6 +267,7 @@ a, a:visited {
 
 
 .proximamente{
+  /* privilegia usar los colores como hex */
   color: red;
   font-weight: 900;
 
@@ -269,6 +286,7 @@ footer {
 
 .lista-footer {
   display: flex;
+  /* no es necesario agregar flex direction row */
   flex-direction: row;
 }
 
@@ -284,6 +302,8 @@ footer {
 }
 
 /*MEDIA*/
+
+/* Intenta siempre poner las media queries de mayor a menor, esa es la convencion */
 
 @media screen and (max-width:458px) {
   .seccion-principal {
