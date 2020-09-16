@@ -18,6 +18,8 @@ body {
   display: flex;
   justify-content: flex-end;
   box-shadow: 0 0 29px 0 rgba(36, 107, 207, 0.25);
+  align-items: center;
+
 }
 
 .lista-menu {
@@ -32,8 +34,17 @@ li {
 }
 
 .menu-hamburguesa {
-  display: none;
+
+  background-color: #fff;
+  font-size: 30px;
+  height: 40px;
+  padding: 5px;
+  border: none;
+  margin-right: 10px;
 }
+
+
+
 
 a, a:visited {
   text-decoration: none;
@@ -249,11 +260,9 @@ a, a:visited {
   width: 100%;
 }
 
-
-.proximamente{
+.proximamente {
   color: red;
   font-weight: 900;
-
 }
 
 /*FOOTER*/
@@ -281,6 +290,20 @@ footer {
 
 .contenedor-iconos-contacto i {
   font-size: 1.9em;
+}
+
+/* MENU HAMBURGUESA */
+
+.lista-menu-hamburguesa {
+  background-color: #fff;
+  width: 100vw;
+  position: absolute;
+  box-shadow: 0 0 29px 0 rgba(36, 107, 207, 0.25);
+  top: 3.5em;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+align-items: flex-end;
 }
 
 /*MEDIA*/
@@ -315,9 +338,16 @@ footer {
   }
   .barra-nav {
     height: 4em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
   }
   .menu-hamburguesa {
     display: flex;
+  }
+  .lista-menu-hamburguesa{
+    width: 50vw;
   }
   .lista-menu li {
     display: none;
@@ -375,4 +405,10 @@ footer {
   .tarjeta-proyecto {
     width: 30%;
   }
+
+
+}
+
+.hidden{
+  display: none;
 }
