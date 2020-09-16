@@ -19,7 +19,6 @@ body {
   justify-content: flex-end;
   box-shadow: 0 0 29px 0 rgba(36, 107, 207, 0.25);
   align-items: center;
-
 }
 
 .lista-menu {
@@ -34,17 +33,14 @@ li {
 }
 
 .menu-hamburguesa {
-
   background-color: #fff;
   font-size: 30px;
   height: 40px;
   padding: 5px;
   border: none;
   margin-right: 10px;
+  display: none;
 }
-
-
-
 
 a, a:visited {
   text-decoration: none;
@@ -303,7 +299,7 @@ footer {
   right: 0;
   display: flex;
   flex-direction: column;
-align-items: flex-end;
+  align-items: flex-end;
 }
 
 /*MEDIA*/
@@ -346,9 +342,9 @@ align-items: flex-end;
   .menu-hamburguesa {
     display: flex;
   }
-  .lista-menu-hamburguesa{
+  /* .lista-menu-hamburguesa{
     width: 50vw;
-  }
+  } */
   .lista-menu li {
     display: none;
   }
@@ -405,10 +401,8 @@ align-items: flex-end;
   .tarjeta-proyecto {
     width: 30%;
   }
-
-
 }
 
-.hidden{
+.hidden {
   display: none;
 }
