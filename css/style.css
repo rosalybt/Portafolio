@@ -19,6 +19,7 @@ body {
   justify-content: flex-end;
   box-shadow: 0 0 29px 0 rgba(36, 107, 207, 0.25);
   align-items: center;
+  background-color: #fff;
 }
 
 .lista-menu {
@@ -40,12 +41,14 @@ li {
   border: none;
   margin-right: 10px;
   display: none;
+  border-radius: 5px;
 }
 
 a, a:visited {
   text-decoration: none;
   color: black;
   display: block;
+  margin-right: 20px;
 }
 
 /*SECCION PRINCIPAL*/
@@ -294,12 +297,28 @@ footer {
   background-color: #fff;
   width: 100vw;
   position: absolute;
-  box-shadow: 0 0 29px 0 rgba(36, 107, 207, 0.25);
-  top: 3.5em;
+  border-bottom: 1px solid rgba(36, 107, 207, 0.25);
+  top: 0;
   right: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-weight: 900;
+  z-index: -1;
+  transform: translateY(-300px);
+  transition: all 0.5s ease-in;
+  background-color:none;
+}
+
+.mostrar-menu-hamburguesa {
+  transform: translateY(50px);
+  background-color: #fff;
+
+}
+
+ul.lista-menu-hamburguesa a:hover  {
+  color: #ffcf24;
+  font-size: 30px;
 }
 
 /*MEDIA*/
@@ -333,11 +352,12 @@ footer {
     flex-direction: column;
   }
   .barra-nav {
-    height: 4em;
+    height: 3.2em;
     position: fixed;
     right: 0;
     top: 0;
     width: 100vw;
+    z-index: 2;
   }
   .menu-hamburguesa {
     display: flex;

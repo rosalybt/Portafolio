@@ -1,13 +1,23 @@
 const botonAbrirhamburguesa = document.querySelector(".menu-hamburguesa")
 const listaMenuHambuerguesa = document.querySelector('.lista-menu-hamburguesa')
+const itemsMenuHamburguesa = document.querySelectorAll('ul.lista-menu-hamburguesa a')
 let cont = 0;
 
-const abrirMenuHambuerguesa = () => {
+const accionarMenuHambuerguesa = () => {
+    listaMenuHambuerguesa.classList.toggle('mostrar-menu-hamburguesa');
 
-        listaMenuHambuerguesa.classList.toggle('hidden');
 }
+
+//verificar cuando se le hace click a un item del menu y al hacerlo cerrarlo
+for (let item of itemsMenuHamburguesa) {
+    item.onclick = () => {
+        listaMenuHambuerguesa.classList.remove('mostrar-menu-hamburguesa');
+    };
+
+}
+
 botonAbrirhamburguesa.onclick = () => {
-    abrirMenuHambuerguesa();
+    accionarMenuHambuerguesa();
 
 }
 
