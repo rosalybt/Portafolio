@@ -7,6 +7,10 @@ const botonesFiltro = document.querySelectorAll(".filtro-boton")
 const tarjetasProyectos = document.querySelectorAll(".tarjeta-proyecto")
 console.log(botonesFiltro)
 
+
+
+//========funciones
+
 const accionarMenuHambuerguesa = () => {
     overlay.classList.toggle('hidden')
     listaMenuHambuerguesa.classList.toggle('mostrar-menu-hamburguesa');
@@ -22,6 +26,8 @@ for (let item of itemsMenuHamburguesa) {
 
 }
 
+/// ==========eventos
+//====================
 botonAbrirhamburguesa.onclick = () => {
     accionarMenuHambuerguesa();
 

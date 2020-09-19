@@ -109,7 +109,6 @@ a, a:visited {
   display: flex;
   border: none;
   align-items: center;
-
 }
 
 /*SECCION-CONOCIMIENTOS*/
@@ -340,8 +339,7 @@ ul.lista-menu-hamburguesa a:hover {
   .seccion-principal {
     flex-direction: column;
   }
-
-  .boton-principal{
+  .boton-principal {
     max-width: 180px;
     justify-content: center;
   }
@@ -432,7 +430,6 @@ ul.lista-menu-hamburguesa a:hover {
     align-items: center;
   }
 }
-
 
 .hidden {
   display: none;
