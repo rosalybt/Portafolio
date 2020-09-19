@@ -3,6 +3,9 @@ const listaMenuHambuerguesa = document.querySelector('.lista-menu-hamburguesa')
 const itemsMenuHamburguesa = document.querySelectorAll('ul.lista-menu-hamburguesa a')
 const overlay = document.querySelector('.overlay')
 
+const botonesFiltro = document.querySelectorAll(".filtro-boton")
+const tarjetasProyectos = document.querySelectorAll(".tarjeta-proyecto")
+console.log(botonesFiltro)
 
 const accionarMenuHambuerguesa = () => {
     overlay.classList.toggle('hidden')
@@ -13,7 +16,7 @@ const accionarMenuHambuerguesa = () => {
 //verificar cuando se le hace click a un item del menu y al hacerlo cerrarlo
 for (let item of itemsMenuHamburguesa) {
     item.onclick = () => {
-       accionarMenuHambuerguesa();
+        accionarMenuHambuerguesa();
 
     };
 
@@ -22,6 +25,23 @@ for (let item of itemsMenuHamburguesa) {
 botonAbrirhamburguesa.onclick = () => {
     accionarMenuHambuerguesa();
 
+}
+
+for (let boton of botonesFiltro) {
+    boton.onclick = () => {
+        console.log(boton.dataset)
+
+        for (let tarjeta of tarjetasProyectos) {
+            if (boton.dataset.tecnologia === tarjeta.dataset.tecnologia) {
+                tarjeta.classList.remove('hidden')
+            } else if (boton.dataset.tecnologia === "todos") {
+                tarjeta.classList.remove('hidden')
+            }
+            else {
+                tarjeta.classList.add('hidden')
+            }
+        }
+    }
 }
 
 

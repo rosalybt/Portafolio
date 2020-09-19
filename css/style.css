@@ -109,6 +109,7 @@ a, a:visited {
   display: flex;
   border: none;
   align-items: center;
+
 }
 
 /*SECCION-CONOCIMIENTOS*/
@@ -339,6 +340,11 @@ ul.lista-menu-hamburguesa a:hover {
   .seccion-principal {
     flex-direction: column;
   }
+
+  .boton-principal{
+    max-width: 180px;
+    justify-content: center;
+  }
   .barra-nav {
     height: 3.2em;
     position: fixed;
@@ -374,9 +380,7 @@ ul.lista-menu-hamburguesa a:hover {
     text-align: center;
   }
   .contenedor-filtro {
-    flex-direction: column;
     font-size: 1em;
-    flex-wrap: wrap;
   }
   .boton {
     margin-top: 3%;
@@ -421,7 +425,14 @@ ul.lista-menu-hamburguesa a:hover {
     width: 100%;
     margin-right: 2%;
   }
+  .contenedor-filtro {
+    flex-direction: column;
+    font-size: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
+
 
 .hidden {
   display: none;
