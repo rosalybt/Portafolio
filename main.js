@@ -34,9 +34,12 @@ botonAbrirhamburguesa.onclick = () => {
 }
 
 for (let boton of botonesFiltro) {
-    boton.onclick = () => {
-        console.log(boton.dataset)
 
+
+    boton.onclick = () => {
+     removerClase();
+        boton.classList.add('boton-principal')
+        boton.classList.remove('boton')
         for (let tarjeta of tarjetasProyectos) {
             if (boton.dataset.tecnologia === tarjeta.dataset.tecnologia) {
                 tarjeta.classList.remove('hidden')
@@ -49,5 +52,11 @@ for (let boton of botonesFiltro) {
         }
     }
 }
+//elimina la clase del boton-principal a los botones
+const removerClase = () => {
+    for (let boton of botonesFiltro) {
+        boton.classList.remove('boton-principal')
+        boton.classList.add('boton')
 
-
+    }
+}
